@@ -432,6 +432,10 @@ nav .mobile-nav {
   border-top: 1px solid #eaeaea;
 }
 
+.thesis .thesis-main video:hover {
+  cursor: pointer;
+}
+
 /*This is for the footer section */
 footer {
   display: flex;
