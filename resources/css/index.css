@@ -1,0 +1,653 @@
+/* This section is for the font-faces being imported */
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gfD_u50.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* HTML */
+html {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: Black;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #124963
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #124963
+}
+
+h1, h2, h3, p {
+  line-height: 1.6;
+}
+
+.title:hover {
+  color: #B62E05;
+  cursor: pointer;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+nav .company {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+nav .company .company-name .black {
+  margin-right: 0px;
+  padding-right: 0px;
+  font-weight: bold;
+  color: Black;
+}
+
+nav .company .company-name .grey {
+  margin-left: 0px;
+  padding-left: 0px;
+  color: Grey;
+}
+
+nav .nav-links {
+  display: inline-block;
+}
+
+nav .company span {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+nav .company img {
+  height: 3rem;
+  width: auto;
+}
+
+nav .nav-links:last-child {
+  padding-right: 0.5rem;
+}
+
+nav .nav-links span {
+  margin-right: 1rem;
+}
+
+nav .nav-links span:hover {
+  color: #B62E05;
+  cursor: pointer;
+}
+
+nav .mobile-nav {
+  display: none;
+}
+
+/* This is for the banner section */
+.hero {
+  display: flex;
+  flex-direction: row;
+  background-color: #F4F7F8;
+}
+
+.hero .banner-image {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+}
+
+.hero .banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.hero .banner-text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+  color: #124963;
+}
+
+.hero .banner-text p {
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.hero .banner-text .button {
+  background-color: #B62E05;
+  color: White;
+  width: 30%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #124963;
+}
+
+.hero .banner-text .button:hover {
+  background-color: #fff;
+  border: 1px solid #124963;
+  color: #124963;
+  cursor: pointer;
+}
+
+/* This is for the information section */
+.information {
+  display: flex;
+  flex-direction: row;
+  background-color: White;
+}
+
+.information .main {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #eeeeee;
+}
+
+.information .main img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.information .main h2 {
+  padding-bottom: 1.5rem;
+}
+
+.information .main .author {
+  padding-top: 1.5rem;
+  font-style: italic;
+}
+
+.information .secondary {
+  width: 40%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information .secondary .orientation, .information .secondary .campus, .information .secondary .lecture {
+  display: flex;
+  width: 100%;
+}
+
+.information .secondary .orientation .orientation-image, .information .secondary .campus .campus-image, .information .secondary .lecture .lecture-image {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.information .secondary .orientation .orientation-image img, .information .secondary .campus .campus-image img, .information .secondary .lecture .lecture-image img {
+  width: 100%;
+  height: auto;
+}
+
+.information .secondary .orientation .orientation-text, .information .secondary .campus .campus-text, .information .secondary .lecture .lecture-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information .secondary .campus {
+  background-color: #F4F7F8;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.information .secondary .cta {
+  color: #366D87;
+}
+
+.information .secondary .cta:hover {
+  color: #B62E05;
+  cursor: pointer;
+}
+
+.information .secondary .orientation .orientation-image .orientation-mobile {
+  display: none;
+}
+
+.information .secondary .campus .campus-image .campus-mobile {
+  display: none;
+}
+
+.information .secondary .lecture .lecture-image .lecture-mobile {
+  display: none;
+}
+
+/* This is for the courses section */
+.courses {
+  background-color: #F4F7F8;
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+.courses h2 {
+  text-align: center;
+}
+
+.courses .course-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 3.5rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.software, .computer-art, .design, .data, .business, .marketing {
+  width: 25%;
+  background-color: #fff;
+  margin: 1rem;
+}
+
+.software:hover, .computer-art:hover, .design:hover, .data:hover, .business:hover, .marketing:hover {
+  border: 1px solid #B62E05;
+}
+
+.software img, .computer-art img, .design img, .data img, .business img, .marketing img {
+  width: 100%;
+}
+
+.course-list .title {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.course-list .description-one {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.course-list .description-two {
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+}
+
+.courses .mobile-courses {
+  display: none;
+}
+
+/* This is for the thesis section */
+.thesis {
+  background-color: #fff;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.thesis h2 {
+  text-align: center;
+}
+
+.thesis-content {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.thesis-content .thesis-main {
+  width: 60%;
+  height: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.thesis-content .thesis-main video {
+  width: 100%;
+  height: auto;
+  padding-bottom: 1.5rem;
+}
+
+.thesis-content .thesis-main h3 {
+  padding-bottom: 0.5rem;
+}
+
+.thesis-content .thesis-secondary {
+  width: 40%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.thesis-content .thesis-secondary .fisma, .thesis-content .thesis-secondary .now-and-then {
+  display: flex;
+  width: 100%;
+}
+
+.thesis-content .thesis-secondary .fisma .fisma-image, .thesis-content .thesis-secondary .now-and-then .now-and-then-image {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.thesis-content .thesis-secondary .fisma .fisma-image img, .thesis-content .thesis-secondary .now-and-then .now-and-then-image img {
+  width: 100%;
+  height: auto;
+}
+
+.thesis-content .thesis-secondary .fisma .fisma-text, .thesis-content .thesis-secondary .now-and-then .now-and-then-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thesis-content .thesis-secondary .now-and-then {
+  background-color: #F4F7F8;
+  border-top: 1px solid #eaeaea;
+}
+
+/*This is for the footer section */
+footer {
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+}
+
+footer .terms span {
+  margin-right: 1rem;
+}
+
+footer .terms span:hover {
+  color: #B62E05;
+  cursor: pointer;
+}
+
+/*This section is for media queries */
+@media only screen and (max-width: 1160px) {
+  .hero .banner-text h1 {
+    padding-bottom: 0rem;
+    font-size: 2rem;
+  }
+
+  .hero .banner-text p {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+/* This is for the mobile nav section */
+  nav .company, nav .nav-links {
+    display: none;
+  }
+
+  nav .mobile-nav {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  nav .mobile-nav img:hover {
+    cursor: pointer;
+  }
+
+/* This is for the mobile banner section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .hero .banner-image {
+    width: 100%;
+    height: auto;
+    padding: 0rem;
+  }
+
+  .hero .banner-image img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .hero .banner-text {
+    width: 100%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero .banner-text h1 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .hero .banner-text p {
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .hero .banner-text .button {
+    width: 90%;
+  }
+
+/* This is for the mobile information section */
+  .information .main {
+    display: none;
+  }
+
+  .information .secondary {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .orientation, .campus, .lecture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orientation, .campus {
+    padding-bottom: 2rem;
+  }
+
+  .information .secondary .orientation .orientation-image, .information .secondary .campus .campus-image, .information .secondary .lecture .lecture-image {
+    width: 90%;
+    height: auto;
+  }
+  .information .secondary .orientation .orientation-image img, .information .secondary .campus .campus-image img, .information .secondary .lecture .lecture-image img {
+    display: none;
+  }
+
+  .information .secondary .orientation .orientation-image .orientation-mobile, .information .secondary .campus .campus-image .campus-mobile, .information .secondary .lecture .lecture-image .lecture-mobile {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .information .secondary .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .information .secondary p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+/* This is for the mobile courses section */
+  .courses .course-list {
+    display: none;
+  }
+
+  .courses h2 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .courses .mobile-courses {
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+
+  .courses .mobile-courses h3 {
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+    background-color: White;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .courses .mobile-courses h3:hover {
+    color: #B62E05;
+    cursor: pointer;
+  }
+
+/* This is for the mobile thesis section */
+  .thesis {
+    padding-bottom: 1.5rem;
+  }
+
+  .thesis h2 {
+    font-size: 2rem;
+  }
+
+  .thesis .thesis-content .thesis-secondary {
+    display: none;
+  }
+
+  .thesis .thesis-content {
+    display: block;
+    width: 100%;
+  }
+
+  .thesis .thesis-content .thesis-main {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .thesis .thesis-content .thesis-main video {
+    width: 100%;
+  }
+
+  .thesis .thesis-content .thesis-main h3, .thesis .thesis-content .thesis-main p {
+    display: none;
+  }
+
+/* This is for the mobile footer section */
+  footer {
+    padding-top: 0rem;
+  }
+
+  footer .terms {
+    display: none;
+  }
+
+  footer .copyright {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+}
