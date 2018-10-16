@@ -81,6 +81,7 @@ html {
 
 h2 {
   font-family: "Montserrat", sans-serif;
+  font-size: 32px;
   font-size: 2rem;
   font-weight: bold;
   color: #124963
@@ -88,6 +89,7 @@ h2 {
 
 h3 {
   font-family: "Montserrat", sans-serif;
+  font-size: 24px;
   font-size: 1.5rem;
   font-weight: bold;
   color: #124963
@@ -97,23 +99,43 @@ h1, h2, h3, p {
   line-height: 1.6;
 }
 
-.title:hover {
+.main-title, .title {
+  -webkit-transition: color 100ms linear;
+  transition: color 100ms linear;
+}
+
+.main-title:hover, .title:hover {
   color: #B62E05;
   cursor: pointer;
 }
 
 /* Navigation */
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
   height: 4rem;
 }
 
 nav .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 24px;
   padding-left: 1.5rem;
 }
 
@@ -135,21 +157,27 @@ nav .nav-links {
 }
 
 nav .company span {
+  font-size: 32px;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 nav .company img {
+  height: 48px;
   height: 3rem;
   width: auto;
 }
 
 nav .nav-links:last-child {
+  padding-right: 8px;
   padding-right: 0.5rem;
 }
 
 nav .nav-links span {
+  margin-right: 16px;
   margin-right: 1rem;
+  -webkit-transition: color 100ms linear;
+  transition: color 100ms linear;
 }
 
 nav .nav-links span:hover {
@@ -163,14 +191,20 @@ nav .mobile-nav {
 
 /* This is for the banner section */
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: #F4F7F8;
 }
 
 .hero .banner-image {
   width: 60%;
   height: auto;
+  padding: 32px 24px;
   padding: 2rem 1.5rem;
 }
 
@@ -180,22 +214,33 @@ nav .mobile-nav {
 }
 
 .hero .banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 40%;
 }
 
 .hero .banner-text h1 {
   font-family: "Montserrat", sans-serif;
+  font-size: 48px;
   font-size: 3rem;
   font-weight: bold;
+  padding-bottom: 24px;
   padding-bottom: 1.5rem;
   color: #124963;
 }
 
 .hero .banner-text p {
+  font-size: 32px;
   font-size: 2rem;
+  padding-bottom: 40px;
   padding-bottom: 2.5rem;
 }
 
@@ -203,30 +248,45 @@ nav .mobile-nav {
   background-color: #B62E05;
   color: White;
   width: 30%;
+  padding-top: 16px;
   padding-top: 1rem;
+  padding-bottom: 16px;
   padding-bottom: 1rem;
   text-align: center;
   font-weight: bold;
   border: 1px solid #124963;
+  border-radius: 0%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 200ms ease 50ms;
+  transition: all 200ms ease 50ms;
 }
 
 .hero .banner-text .button:hover {
   background-color: #fff;
   border: 1px solid #124963;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
   color: #124963;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
   cursor: pointer;
 }
 
 /* This is for the information section */
 .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: White;
 }
 
 .information .main {
   width: 60%;
   height: auto;
+  padding: 32px 24px;
   padding: 2rem 1.5rem;
   border-right: 1px solid #eeeeee;
 }
@@ -234,14 +294,17 @@ nav .mobile-nav {
 .information .main img {
   width: 100%;
   height: auto;
+  padding-bottom: 32px;
   padding-bottom: 2rem;
 }
 
 .information .main h2 {
+  padding-bottom: 24px;
   padding-bottom: 1.5rem;
 }
 
 .information .main .author {
+  padding-top: 24px;
   padding-top: 1.5rem;
   font-style: italic;
 }
@@ -249,12 +312,21 @@ nav .mobile-nav {
 .information .secondary {
   width: 40%;
   height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .information .secondary .orientation, .information .secondary .campus, .information .secondary .lecture {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -262,6 +334,7 @@ nav .mobile-nav {
 .information .secondary .orientation .orientation-image, .information .secondary .campus .campus-image, .information .secondary .lecture .lecture-image {
   width: 35%;
   height: auto;
+  padding: 16px;
   padding: 1rem;
 }
 
@@ -272,9 +345,16 @@ nav .mobile-nav {
 
 .information .secondary .orientation .orientation-text, .information .secondary .campus .campus-text, .information .secondary .lecture .lecture-text {
   width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .information .secondary .campus {
@@ -285,6 +365,8 @@ nav .mobile-nav {
 
 .information .secondary .cta {
   color: #366D87;
+  -webkit-transition: color 100ms linear;
+  transition: color 100ms linear;
 }
 
 .information .secondary .cta:hover {
@@ -308,7 +390,9 @@ nav .mobile-nav {
 .courses {
   background-color: #F4F7F8;
   width: 100%;
+  padding-bottom: 16px;
   padding-bottom: 1rem;
+  padding-top: 32px;
   padding-top: 2rem;
 }
 
@@ -317,23 +401,36 @@ nav .mobile-nav {
 }
 
 .courses .course-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px 56px;
   padding: 1rem 3.5rem;
   width: 70%;
   margin: 0 auto;
 }
 
 .software, .computer-art, .design, .data, .business, .marketing {
-  width: 25%;
+  width: 26%;
   background-color: #fff;
+  margin: 16px;
   margin: 1rem;
 }
 
 .software:hover, .computer-art:hover, .design:hover, .data:hover, .business:hover, .marketing:hover {
   border: 1px solid #B62E05;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
 .software img, .computer-art img, .design img, .data img, .business img, .marketing img {
@@ -341,19 +438,29 @@ nav .mobile-nav {
 }
 
 .course-list .title {
+  padding-top: 16px;
   padding-top: 1rem;
+  padding-left: 16px;
   padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
 }
 
 .course-list .description-one {
+  padding-left: 16px;
   padding-left: 1rem;
+  padding-top: 8px;
   padding-top: 0.5rem;
+  padding-bottom: 8px;
   padding-bottom: 0.5rem;
 }
 
 .course-list .description-two {
+  padding-left: 16px;
   padding-left: 1rem;
+  padding-bottom: 24px;
   padding-bottom: 1.5rem;
+  padding-right: 16px;
   padding-right: 1rem;
 }
 
@@ -365,7 +472,9 @@ nav .mobile-nav {
 .thesis {
   background-color: #fff;
   width: 100%;
+  padding-top: 32px;
   padding-top: 2rem;
+  padding-bottom: 32px;
   padding-bottom: 2rem;
   border-bottom: 1px solid #eeeeee;
 }
@@ -375,36 +484,52 @@ nav .mobile-nav {
 }
 
 .thesis-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
   padding-top: 2rem;
 }
 
 .thesis-content .thesis-main {
   width: 60%;
   height: auto;
+  padding-left: 24px;
   padding-left: 1.5rem;
+  padding-right: 24px;
   padding-right: 1.5rem;
 }
 
 .thesis-content .thesis-main video {
   width: 100%;
   height: auto;
+  padding-bottom: 24px;
   padding-bottom: 1.5rem;
 }
 
 .thesis-content .thesis-main h3 {
+  padding-bottom: 8px;
   padding-bottom: 0.5rem;
 }
 
 .thesis-content .thesis-secondary {
   width: 40%;
   height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .thesis-content .thesis-secondary .fisma, .thesis-content .thesis-secondary .now-and-then {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -412,6 +537,7 @@ nav .mobile-nav {
 .thesis-content .thesis-secondary .fisma .fisma-image, .thesis-content .thesis-secondary .now-and-then .now-and-then-image {
   width: 35%;
   height: auto;
+  padding: 16px;
   padding: 1rem;
 }
 
@@ -422,9 +548,16 @@ nav .mobile-nav {
 
 .thesis-content .thesis-secondary .fisma .fisma-text, .thesis-content .thesis-secondary .now-and-then .now-and-then-text {
   width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .thesis-content .thesis-secondary .now-and-then {
@@ -438,15 +571,24 @@ nav .mobile-nav {
 
 /*This is for the footer section */
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  height: 48px;
   height: 3rem;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 24px;
   padding-left: 1.5rem;
+  padding-right: 8px;
   padding-right: 0.5rem;
+  padding-top: 16px;
   padding-top: 1rem;
 }
 
 footer .terms span {
+  margin-right: 16px;
   margin-right: 1rem;
 }
 
@@ -467,6 +609,10 @@ footer .terms span:hover {
     font-size: 1.5rem;
   }
 
+  .hero .banner-text .button {
+    width: 90%;
+  }
+
   h2 {
     font-size: 1.5rem;
   }
@@ -484,20 +630,37 @@ footer .terms span:hover {
   }
 
   nav .mobile-nav {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100%;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  nav .mobile-nav img {
+    -webkit-transition: opacity 250ms linear;
+    transition: opacity 250ms linear;
   }
 
   nav .mobile-nav img:hover {
     cursor: pointer;
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
   }
 
 /* This is for the mobile banner section */
   .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 2rem;
   }
 
@@ -516,9 +679,16 @@ footer .terms span:hover {
   .hero .banner-text {
     width: 100%;
     padding-left: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .hero .banner-text h1 {
@@ -547,9 +717,16 @@ footer .terms span:hover {
   }
 
   .orientation, .campus, .lecture {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .orientation, .campus {
@@ -606,6 +783,9 @@ footer .terms span:hover {
   .courses .mobile-courses h3:hover {
     color: #B62E05;
     cursor: pointer;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
   }
 
 /* This is for the mobile thesis section */
